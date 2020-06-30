@@ -1,0 +1,361 @@
+<html>
+	<head>
+		<title>Apparswamy Family</title>
+		<style>
+			#canvas_div{
+				width:100%;
+				height:500px;
+				border:3px solid black;
+				position:relative;
+			}
+			#canvas{
+				width:100%;
+				height:100%;
+			}
+			#header{
+				font-family:courier;
+				font-size:35;
+				width:100%;
+				border-radius:10px;
+				margin:5px;
+				color:white;
+				height:40px;
+				background:linear-gradient(to right,yellow,red,green,violet,blue);
+			}
+			#refernce{
+				color:black;
+				float:left;
+				font-size:25px;
+				text-align:center;
+				font-style:courier;
+				width:100%;
+				position:relative;
+				margin-bottom:10px;
+			
+			}
+			ul.ref_mov{
+				list-style-type:none;
+				position:parent;
+				margin-top:1px;
+				margin-right:1px;	
+			}
+			.ref_mov li{
+				float:left;
+				background-color:grey;
+				width:24%;
+				font-size:25px;
+				font-weight:bold;
+				padding:0px;
+				margin:1px;
+				border-radius:5px							
+			}
+			ul.ref_mov li:hover{
+				background-color:white;
+			}
+			#about{
+				
+				width:99%;
+				border:2px solid black;
+				border-radius:18px;
+				display:none;
+			}
+			#home{
+				border:2px solid black;
+				width:99%;
+				display:block;
+				border-radius:18px;
+				padding:5px;
+			}
+			#history{
+				display:none;
+				border:2px solid black;
+				width:99%;
+				border-radius:18px;
+				
+			}
+			#gallery{
+				display:none;
+				border:2px solid black;
+				width:99%;
+				border-radius:18px;
+			}
+			.important .container{
+				float:left;
+			}
+			.imagesource{
+				border:2px solid black;
+				margin:1%;
+				height:350px;
+				width:22.5%;
+				float:left;
+				border-radius:18px;
+			}
+			img{
+				width:100%;
+				height:100%;
+				display:block;
+				border-radius:18px;
+			}
+			img:hover{
+				opacity:0.5;
+			}
+			.imageholder{
+				float:left;
+			}
+			#imagefloater{
+				
+				float:right;
+				width:25%;
+				display:none;
+				height:400px;
+				border:2px solid black;
+				border-radius:18px;
+				margin:3px;
+			}	
+			span{
+				text-decoration:underline;
+				font-weight:bold;
+			}		
+		</style>
+	</head>
+	<body>
+		<div id="canvas_div">
+			<canvas id="canvas">
+				
+			</canvas>
+		</div>
+		<div id="content" class="important">
+			<div id="header" align="center" class="container">
+				<B>APPARSWAMY FAMILY</B>	
+			</div>
+			<div id="refernce" class="container">
+				<ul class="ref_mov">
+					<li onclick="homeClicked()">home</li>
+					<li onclick="aboutClicked()">about</li>
+					<li onclick="galleryClicked()">gallery</li>
+					<li onclick="historyClicked()">history</li>
+				<ul>
+			</div>
+			<div id="home" class="container">
+				<div style="float:left;padding-right:20px;">
+					<table border=1 align="center">
+						<tr>
+							<td style="background-color:green"><button onclick="kumarClicked()" style="width:100%;background-color: #f44336;font-size:20px;">Kumar</button></td>
+						</tr>
+						<tr>
+							<td style="background-color:green"><button onclick="sureshClicked()" style="width:100%;background-color: #f44336;font-size:20px;">Suresh</button></td>
+						</tr>
+						<tr>
+							<td style="background-color:green"><button onclick="sankarClicked()" style="width:100%;background-color: #f44336;font-size:20px;">Sankar</button></td>
+						</tr>
+						<tr>
+							<td style="background-color:green"><button onclick="rajaClicked()" style="width:100%;background-color: #f44336;font-size:20px;">Raja</button></td>
+						</tr>
+						<tr>
+							<td style="background-color:green"><button onclick="mohanClicked()" style="width:100%;background-color: #f44336;font-size:20px;">Mohan</button></td>
+						</tr>
+						<tr>
+							<td style="background-color:green"><button onclick="selvaClicked()" style="width:100%;background-color: #f44336;font-size:20px;">SelvaKumar</button></td>
+						</tr>
+
+					</table>
+				</div>
+				<div style="float:left;">
+					<p id="inner" style="font-size:25"><b>Apparswamy's wife is Premavathy</b><p>
+				</div>
+				<div style="float:right;width:30%;border-radius:18px;border:2px solid black;height:230px;">
+					<img id="imagehome" src="images/fa.jpg">
+				</div>
+			</div>
+			<div id="about" class="container"><div style="width:73%;margin:5px;float:left;">
+				<p><span onclick="wordClicked('apparswamy.jpg')" style="color:pink">apparsamy</span> is head of the family</p>
+				<p><span onclick="wordClicked('premavathy.jpg')" style="color:purple">premavathi</span> queen of our family "aaya onnu"this song was made by us</p>
+				<p><span onclick="wordClicked('kumar.jpg')" style="color:green">kumar arul</span> kumar is 1st son of apparsamy and premavathi. they were very loyal couples</p>
+				<p><span onclick="wordClicked('suresh.jpg')" style="color:red">suresh devi</span> suresh is 2nd son of apparsamy and premavathi. they were very funny couples</p>
+				<p><span onclick="wordClicked('sankar.jpg')" style="color:orange">sankar mohana</span> sankar is 3rd son of apparsamy and premavathi. they were very genuine couples</p>
+				<p><span onclick="wordClicked('raja.jpg')" style="color:yellow">raja meera</span> raja is 4th son of apparsamy and premavathi. they were conflict avoiders. more understanding couples</p>
+				<p><span onclick="wordClicked('mohan.jpg')" style="color:turquoise">mohan ellamal</span> mohan is 5th son of apparsamy and premavathi. they were very smiling couples</p>
+				<p><span onclick="wordClicked('selva.jpg')" style="color:cyan">selva vidya</span> selva is 6th son of apparsamy and premavathi. they were conflict avoiders. more lovable couples</p></div>
+	
+				<div id="imagefloater"><img id="aboutimage"></div>
+			</div>
+			<div id="gallery" class="container">
+				<div class="imageholder" style="width:100%;">
+					<div class="imagesource"><a href="images/11.jpg"><img src="images/11.jpg"></a>
+						
+					</div>
+					<div class="imagesource"><a href="images/12.jpg"><img src="images/12.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/13.jpg"><img src="images/13.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/14.jpg"><img src="images/14.jpg"></a>
+					</div>
+				</div>
+				<div class="imageholder" style="width:100%;">
+					<div class="imagesource"><a href="images/21.jpg"><img src="images/21.jpg"></a>
+						
+					</div>
+					<div class="imagesource"><a href="images/22.jpg"><img src="images/22.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/23.jpg"><img src="images/23.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/24.jpg"><img src="images/24.jpg"></a>
+					</div>
+				</div>
+				<div class="imageholder" style="width:100%;">
+					<div class="imagesource"><a href="images/31.jpg"><img src="images/31.jpg"></a>
+						
+					</div>
+					<div class="imagesource"><a href="images/32.jpg"><img src="images/32.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/33.jpg"><img src="images/33.jpg"></a>
+					</div>
+					<div class="imagesource"><a href="images/34.jpg"><img src="images/34.jpg"></a>
+					</div>
+				</div>	
+			</div>
+			<div id="history" class="container">
+				<h2 style="color:blue;background-color:orange;margin:5px;width:134px;">HISTORY:</h2>
+				<p style="margin:20px;font-family:Arial;font-size:20px;">Apparswamy family is the biggest family.It comes from huge generation.sithar sooran is the head of the generation.who is the father of pavada rayan.He had son thillai Govindhan.whos is the father of Rajagopal.Raja Gopal has son Apparswamy.Apparswamy has six children.they are Kumar,Suresh,Sankar,Raja,Mohan,Selvakumar.Kumar wife is Arularasi and there children are Keerthana,Thirumurugan and Ramprasath.suresh wife is Devi and there children are Tamil,Swathi.Sankar wife is Mohana.Raja wife is meera and there children is Ashwin.Mohan wife Ellammal.Selvakumar wife is Vidya.This is the generation history of Apparswamy family.the chhildrens out os six are responsible for next generation and lead for their own life.</p>
+				<h2 align="center">Thank You</h2>
+			</div>
+		</div>		
+	</body>
+	<script>
+		var canvas=document.getElementById("canvas");
+		ctx=canvas.getContext('2d');
+		var images=["images/1.jpg","images/2.jpeg","images/3.jpeg","images/4.jpg"];
+		var interval;
+		var selected_dot="images/full_dark.png";
+		var non_selected_dot="images/dot_blue_selected.png";
+		var y_fixed_for_dots=canvas.height-10;
+		var i=0;
+		var x=0;
+		var starting=canvas.width/2-(images.length*5);
+		var j;
+		 
+		window.onload=function(){
+			var img=new Image();
+			img.src=images[i];
+			ctx.drawImage(img,0,0,canvas.width,canvas.height);
+			dot_maker(0);
+			pause_the_pic();
+		}
+		function movePic(){
+			var img1=new Image();
+			img1.src=images[i];
+			var img2=new Image();
+			img2.src=images[j];
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			ctx.drawImage(img2,x,0,canvas.width,canvas.height);
+			ctx.drawImage(img1,x+canvas.width+2,0,canvas.width,canvas.height);
+			x-=10;
+			dot_maker(j);
+			if(x+canvas.width+2<=0){
+				stoping_func(i);
+			}
+		}
+		function pause_the_pic(){
+			setTimeout(start,3000);
+		}
+		function start(){
+			j=i;
+			if(i==images.length-1){
+				i=-1;
+			}
+			i++;
+			x=0;
+			interval=setInterval(movePic,20);
+		}
+		function stoping_func(val){
+				clearInterval(interval);
+				var img1=new Image();
+				img1.src=images[val];
+				ctx.drawImage(img1,0,0,canvas.width,canvas.height);
+				dot_maker(val);
+				pause_the_pic();
+		}
+		function dot_maker(n){
+			var k;
+			var position_set;
+			for(k=0;k<images.length;k++){
+				position_set=starting+k*10;
+				var dot_image=new Image();
+				dot_image.src=non_selected_dot;
+				if(k==n){
+					var dot_image=new Image();
+					dot_image.src=selected_dot;
+				}
+				ctx.drawImage(dot_image,position_set,y_fixed_for_dots,5,5);
+			}
+		}
+		function kumarClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Arularasi</dd><dt><b>Sons/Daughter:</b></dt><dd>Keerthana</dd><dd>Thirumurugan</dd><dd>Ram Prasath</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/ku.jpg";
+		}
+		function sureshClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Devi</dd><dt><b>Sons/Daughter:</b></dt><dd>Tamil Selvi</dd><dd>Swathi</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/su.jpg";
+
+		}
+		function sankarClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Mohana</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/sa.jpg";
+		}
+		function rajaClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Meera</dd><dt><b>Sons/Daughter:</b></dt><dd>Ashwin</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/ra.jpg";
+		}
+		function mohanClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Ellammal</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/mo.jpg";
+		}
+		function selvaClicked(){
+			var value=document.getElementById("inner");
+			value.innerHTML="<dl><dt><b>Wife:</b></dt><dd>Vidya</dd></dl>";
+			var im=document.getElementById("imagehome");
+			im.src="images/se.jpg";
+		}
+		function homeClicked(){
+			performShow(0);
+		}
+		function aboutClicked(){
+			performShow(1);
+		}
+		function galleryClicked(){
+			performShow(2);
+		}
+		function historyClicked(){
+			performShow(3);
+		}
+		function performShow(n){
+			var li=["home","about","gallery","history"];
+			var y;
+			for(y=0;y<li.length;y++){
+				var elem=document.getElementById(li[y]);
+				if(y==n){
+					elem.style.display="block";
+				}else{
+					elem.style.display="none";
+				}
+			}
+			
+		}
+		function wordClicked(word){
+			var elem=document.getElementById("imagefloater");
+			elem.style.display="block";
+			var selem=document.getElementById("aboutimage");
+			selem.src="images/"+word;			
+		}
+	</script>
+</html>
